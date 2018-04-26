@@ -17,7 +17,7 @@ var correct = "";
 var wrong = "";
 
 //crear mensaje inicio trivia
-alert("Bienvenido a la terrible trivia");
+alert("Bienvenid@ a la Trivia de Laboratoria");
 
 //preguntar Nombre
 var name = prompt("¿Cuál es tu nombre?");
@@ -40,50 +40,50 @@ if (answers.indexOf(play) === 0) {
     //se usan las preguntas cargadas en las listas de preguntas para consultar al usuario
     var questionOne = prompt(questions[0]);
     if (answers.indexOf(questionOne) === 0) {
-        alert("La raja");
+        alert("Correcto");
 
         //si la respuestaes correcta se acumula en la variable correct para presentar al final
-        correct = correct + questions[0];
+        correct = correct + "<li>" + questions[0] + "</li>";
     } else {
-        alert("cueck");
+        alert("Incorrecto");
         //si la respuestaes incorrecta se acumula en la variable wrong para presentar al final
-        wrong = wrong + questions[0];
+        wrong = wrong + "<li>" + questions[0] + "</li>";
     };
 
     var questionTwo = prompt(questions[1]);
     if (answers.indexOf(questionTwo) > 0) {
-        alert("La raja");
-        correct = correct + questions[1];
+        alert("Correcto");
+        correct = correct + "<li>" + questions[1] + "</li>";
     } else {
-        alert("cueck");
-        wrong = wrong + questions[1];
+        alert("Incorrecto");
+        wrong = wrong + "<li>" + questions[1] + "</li>";
     };
 
     var questionThree = prompt(questions[2]);
     if (answers.indexOf(questionThree) > 0) {
-        alert("La raja");
-        correct = correct + questions[2];
+        alert("Correcto");
+        correct = correct + "<li>" + questions[2] + "</li>";
     } else {
-        alert("cueck");
-        wrong = wrong + questions[2];
+        alert("Incorrecto");
+        wrong = wrong + "<li>" + questions[2] + "</li>";
     };
 
     var questionFour = prompt(questions[3]);
     if (answers.indexOf(questionFour) === 0) {
-        alert("La raja");
-        correct = correct + questions[3];
+        alert("Correcto");
+        correct = correct + "<li>" + questions[3] + "</li>";
     } else {
-        alert("cueck");
-        wrong = wrong + questions[3];
+        alert("Incorrecto");
+        wrong = wrong + "<li>" + questions[3] + "</li>";
     };
 
     var questionFive = prompt(questions[4]);
     if (answers.indexOf(questionFive) > 0) {
-        alert("La raja");
-        correct = correct + questions[4];
+        alert("Correcto");
+        correct = correct + "<li>" + questions[4] + "</li>";
     } else {
-        alert("cueck");
-        wrong = wrong + questions[4];
+        alert("Incorrecto");
+        wrong = wrong + "<li>" + questions[4] + "</li>";
     };
 
     //para obtener la refencia del elemento HTML que queremos modificar
@@ -96,5 +96,5 @@ if (answers.indexOf(play) === 0) {
 
     // termina el gran IF
 } else {
-    alert("Pucha pa la otra");
+    alert("Hasta la proxima!");
 };
